@@ -1,0 +1,33 @@
+import { useEffect } from "react"
+import Scroll from "../app/classes/scroll"
+import React from "react"
+
+export default function Landing() {
+  useEffect(() => {
+    window.$scroll = new Scroll("page")
+  }, [])
+
+  return (
+    <>
+      <div className="app preloading" id="smooth-wrapper">
+        <div className="__app" id="smooth-content">
+          <div className="content" id="content" data-template="page">
+            {/* <Header /> */}
+            <main>
+              <div className="__page" id="page"></div>
+            </main>
+            {/* <Footer /> */}
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+declare global {
+  interface Window {
+    $(el: string): HTMLElement
+    $$(el: string): HTMLElement[]
+    $scroll: Scroll
+  }
+}

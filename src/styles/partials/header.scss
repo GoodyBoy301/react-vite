@@ -1,0 +1,143 @@
+header {
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 2.43rem 11.65rem 1.2rem;
+  z-index: 30;
+  background-color: #f5f5f503;
+  backdrop-filter: blur(0.3rem);
+  color: #ffffff;
+  pointer-events: none;
+  @include media("<phone") {
+    padding: 2.711rem 2.25rem 1.4rem;
+    z-index: 10;
+  }
+
+  & > * {
+    pointer-events: all;
+  }
+}
+
+.Nav__logo {
+  width: 10.882rem;
+  height: 3.7rem;
+  filter: invert(1);
+  @include media("<phone") {
+    width: 10.882rem;
+    height: 3.7rem;
+  }
+}
+
+.Nav__links {
+  display: flex;
+  gap: 3.4rem;
+  align-items: center;
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2857142857;
+  letter-spacing: -0.02em;
+  // color: #090908;
+  color: #ffffff;
+  @include media("<phone") {
+    gap: 1.258rem;
+  }
+}
+
+.Nav__link {
+  @include media("<phone") {
+    display: none;
+  }
+}
+.Nav__cta {
+  @extend %watch;
+  @include media("<phone") {
+    display: flex;
+  }
+}
+
+.Nav__search {
+  width: 2.4rem;
+  height: 2.4rem;
+  filter: invert(1);
+  @include media("<phone") {
+    width: 2.157rem;
+    height: 2.157rem;
+  }
+}
+
+.header__nav {
+  position: fixed;
+  z-index: 30;
+  width: 0.65rem;
+  height: 7vh;
+  background: #00000099;
+  right: 0.5rem;
+  top: 1vh;
+  border-radius: 4rem;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  [data-template="contact"] & {
+    display: none;
+  }
+}
+
+.header__nav__track {
+  position: fixed;
+  width: 1.65rem;
+  height: 100vh;
+  cursor: grab;
+  right: 0rem;
+  top: 1vh;
+  border-radius: 4rem;
+  transition: opacity 0.5s ease-in-out;
+
+  @include media("<phone") {
+    display: none;
+  }
+
+  &:hover + aside {
+    opacity: 1;
+  }
+
+  &.active {
+    cursor: grabbing;
+  }
+
+  &.active + aside {
+    width: 0.72rem;
+  }
+}
+
+// .lenis-scrolling .header__nav {
+//   opacity: 1;
+// }
+
+.NavLite {
+  padding-inline: 12rem;
+  font-family: "Nohemi";
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 99.01%;
+  letter-spacing: -0.02em;
+  color: #090908;
+  font-weight: 600;
+  a {
+    font-weight: 500;
+    color: #c4c4c4;
+  }
+
+  @include media("<phone") {
+    display: none;
+  }
+}

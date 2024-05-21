@@ -1,0 +1,42 @@
+{
+  "name": "with-chude",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rive-app/canvas": "^2.15.5",
+    "@rive-app/canvas-lite": "^2.15.5",
+    "@rive-app/react-canvas": "^4.9.4",
+    "@rive-app/react-canvas-lite": "^4.9.4",
+    "cloudinary-video-player": "^2.0.1",
+    "dayjs": "^1.11.11",
+    "emoji-picker-react": "^4.9.2",
+    "gsap": "^3.12.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "videojs-seek-buttons": "^3.0.1",
+    "vite-plugin-webp-generator": "^0.0.5"
+  },
+  "devDependencies": {
+    "@studio-freight/lenis": "1.0.29",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "include-media": "^2.0.0",
+    "sass": "^1.75.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}

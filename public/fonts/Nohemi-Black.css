@@ -1,0 +1,9 @@
+/* Webfont: Nohemi-Black */
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-Black.woff2") format("woff2"),
+    /* Modern Browsers */ url("/fonts/Nohemi-Black.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+}

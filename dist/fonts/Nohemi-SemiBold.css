@@ -1,0 +1,9 @@
+/* Webfont: Nohemi-SemiBold */
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-SemiBold.woff2") format("woff2"),
+    /* Modern Browsers */ url("/fonts/Nohemi-SemiBold.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}

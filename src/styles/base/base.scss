@@ -1,0 +1,50 @@
+$breakpoints: (
+  "phone": 760px,
+  "tablet": 1024px,
+  "desktop": 1920px,
+) !default;
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+  @include media("<phone") {
+    font-size: calc(100vw / 390 * 10);
+    width: 100vw !important;
+  }
+
+  &:has(.__video) {
+    overflow: hidden;
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+[data-desktop] {
+  @include media("<phone") {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
+[data-mobile] {
+  @include media(">=phone") {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}

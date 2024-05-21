@@ -1,0 +1,202 @@
+footer {
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0rem;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+  background: #090908;
+}
+
+.FooterLite {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+  background: #090908;
+  position: relative;
+  overflow: hidden;
+  font-family: "Euclid Circular A";
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 13.3rem;
+    left: 0;
+    bottom: 7.8rem;
+    background: #0c0c0f;
+    border-radius: 2.8rem;
+    @include media("<phone") {
+      display: none;
+    }
+  }
+
+  .Footer__footer {
+    background-color: transparent;
+    @include media("<phone") {
+      padding-top: 3rem;
+    }
+  }
+}
+
+.Footer__top {
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 12.5rem 15.9rem 0;
+  justify-content: space-between;
+  @include media("<phone") {
+    padding: 5rem 4.88rem 0;
+  }
+}
+
+.Footer__heading {
+  font-family: "Nohemi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6.4rem;
+  line-height: 1.09375;
+  color: #090908;
+  width: 57rem;
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+.Footer__features {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #090908;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  gap: 0.9rem;
+  @include media("<phone") {
+    font-size: 1.4rem;
+  }
+
+  p {
+    grid-area: 1/1/2/3;
+  }
+}
+
+.Footer__feature {
+  width: 16.15rem;
+  height: 7.4rem;
+  // background: #f5f5f5;
+  border-radius: 1.6rem;
+  @include media("<phone") {
+    height: 4.233rem;
+    width: 13.8165rem;
+    border-radius: 1.428rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+
+    &[data-alt] {
+      filter: invert(1);
+    }
+  }
+}
+
+.Footer__bottom {
+  border-top: 0.1rem solid #efefef;
+  padding: 9rem 15rem 4.9rem;
+  margin-top: -0.1rem;
+  display: flex;
+  gap: 3.2rem;
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #090908;
+  border-radius: 0 0 2.8rem 2.8rem;
+  background-color: #f5f5f5;
+  @include media("<phone") {
+    padding: 2.6rem 4.7rem 3.8rem;
+    gap: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+.Footer__copyright {
+  margin-left: auto;
+  @include media("<phone") {
+    position: absolute;
+    font-size: 1.2rem;
+    color: #ffffff;
+    bottom: 3.4rem;
+    z-index: 2;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+.Footer__footer {
+  display: flex;
+  background: #090908;
+  height: 10.8rem;
+  padding-top: 3rem;
+  justify-content: center;
+  gap: 18rem;
+  align-items: center;
+  position: relative;
+  @include media("<phone") {
+    height: 12.1rem;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+.Footer__footer__links {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  gap: 4rem;
+  display: flex;
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+.Footer__footer__socials {
+  display: flex;
+  gap: 1.6rem;
+
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

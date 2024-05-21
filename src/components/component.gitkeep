@@ -1,0 +1,9 @@
+import { FC, ReactNode, useEffect } from "react"
+
+const Component: FC<{ children?: ReactNode | ReactNode[] }> = ({ children }) => {
+  useEffect(() => {}, [])
+
+  return <></>
+}
+
+export default Component
